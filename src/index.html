@@ -10,36 +10,35 @@
 
 <body>
     <header class="bg-gray-200">
-        <nav class="flex items-center text-2xl justify-between py-5 px-20">
+        <nav class="flex items-center text-2xl justify-between py-5 px-5 lg:px-20">
             <nav>
                 <img src="./img/лого.png" alt="">
             </nav>
             <nav class="flex gap-x-10">
-                <p>Обо мне</p>
-                <p>Занятия</p>
-                <p>Запись</p>
+                <p class=" lg:ml-0">Обо мне</p>
+                <p class="hidden lg:block">Занятия</p>
+                <p class="hidden lg:block">Запись</p>
             </nav>
         </nav>
-        <section class="flex justify-around">
-            <aside>
+        <section class="block text-center lg:text-start lg:flex justify-around">
+            <aside class="ml-10 lg:ml-0">
                 <img src="./img/Гитарист + фигуры.png" alt="">
             </aside>
-
-            <aside class="-ml-32">
-                <img class="relative -left-20 top-[100px]" src="./img/Иконки.png" alt="">
-                <p class="relative top-[100px] text-5xl -left-20 font-bold">Я Виктор</p>
-                <img class="relative left-20" src="./img/Subtract.png" alt="">
-                <p class="relative -top-[80px] -left-20 text-xl text-gray-500">Репетитор игры на гитаре с семилетним
+            <aside class="lg:-ml-32">
+                <img class="relative ml-20 mt-10 lg:mt-0 lg:ml-0 lg:-left-20 lg:top-[100px]" src="./img/Иконки.png" alt="">
+                <p class="relative lg:top-[100px] text-5xl lg:-left-20 font-bold">Я Виктор</p>
+                <img class="hidden lg:block relative lg:left-20" src="./img/Subtract.png" alt="">
+                <p class="relative lg:-top-[80px] lg:-left-20 text-xl text-gray-500">Репетитор игры на гитаре с семилетним
                     <br> опытом преподавания
                 </p>
-                <div class="flex relative -top-[50px] -left-20 gap-5">
+                <div class="block lg:flex relative lg:-top-[50px] lg:-left-20 gap-5">
                     <button class="bg-[#f28b64] py-2 px-8 text-xl text-white rounded-full">Забронировать <br>
                         урок</button>
-                    <img class="ml-5" src="./img/Иконка чата 1.svg" alt="">
+                    <img class="hidden lg:block ml-5" src="./img/Иконка чата 1.svg" alt="">
                     <p class="text-xl mt-2">Есть <br>
                         вопросы?</p>
                 </div>
-                <img class="relative top-[65px] left-[244px]" src="./img/Subtract (1).png" alt="">
+                <img class="hidden lg:block relative top-[65px] left-[244px]" src="./img/Subtract (1).png" alt="">
             </aside>
         </section>
     </header>
@@ -62,28 +61,28 @@
                     </div>
                 </aside>
                 <aside class="mt-10 grid grid-cols-1 sm:grid-cols-4 gap-4 text-center">
-                    <div class="flex gap-5 ml-5">
+                    <div class="block lg:flex gap-5 ml-5">
                         <img src="./img/01-Иконка.svg" alt="">
                         <div>
                             <p class="text-4xl font-bold">7</p>
                             <p class="text-gray-600 text-xl">лет <br> преподавания</p>
                         </div>
                     </div>
-                    <div class="flex gap-5 ml-5">
+                    <div class="block lg:flex gap-5 ml-5">
                         <img src="./img/04-Иконка_вторая секкция 1.svg" alt="">
                         <div>
                             <p class="text-4xl font-bold">276</p>
                             <p class="text-gray-600 text-xl">Отзывов <br> на 5 звезд</p>
                         </div>
                     </div>
-                    <div class="flex gap-5 ml-5">
+                    <div class="block lg:flex gap-5 ml-5">
                         <img src="./img/03-Иконка_вторая секкция 1.svg" alt="">
                         <div>
                             <p class="text-4xl font-bold">314</p>
                             <p class="text-gray-600 text-xl">лет <br> преподавания</p>
                         </div>
                     </div>
-                    <div class="flex gap-5 ml-5">
+                    <div class="block lg:flex gap-5 ml-5">
                         <img src="./img/02-Иконка_вторая секкция 1.svg" alt="">
                         <div>
                             <p class="text-4xl font-bold">2000</p>
@@ -120,6 +119,16 @@
             </aside>
         </section>
     </main>
+    <footer class="flex justify-between">
+        <aside>
+            <img src="./img/Гриф 1.png" alt="">
+        </aside>
+        <aside class="relative -left-10">
+            <p class="text-6xl font-bold mt-5">Запишись на <br>
+                пробный урок</p>
+            <img class="mt-10" src="./img/Иконки.png" alt="">
+        </aside>
+    </footer>
 </body>
 
 </html>
