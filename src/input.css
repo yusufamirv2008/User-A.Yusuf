@@ -1,8 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.tiger{
-    background-image: url(./img/Декор-круги.png);
-    width: 100%;
-    height: 300px;
-}
